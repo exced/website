@@ -65,15 +65,6 @@ function Resume() {
             <h2>Education</h2>
             <h3>Computer science and applied mathematics, ENSEEIHT</h3>
             <em>2014 - 2017 | France</em>
-
-            <h2>Technologies</h2>
-            <p>
-              <ul>
-                <li>TS, JS, Go, Reason/OCaml</li>
-                <li>AWS</li>
-                <li>React, React native, Redux, Mobx, GraphQL, Three.js</li>
-              </ul>
-            </p>
           </div>
         </div>
       </div>
