@@ -1,0 +1,4 @@
+.header {
+  height: calc(100vh - 220px);
+  text-align: center;
+}
