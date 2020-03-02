@@ -10,10 +10,13 @@ tags: [AI]
 # Auto Encoder
 
 Auto Encoder is a simple method to generate data in an unsupervised world.
+
 The idea is to have 2 neural nets :
 
 - **encoder**: extract data information by destructing the image into a latent space
 - **decoder**: reconstruct data from information from a latent space
+
+<!--truncate-->
 
 You can perform function minimization on the real data and the decode(encoded) data.
 Therefore you will generate an image that looks like a real one.
