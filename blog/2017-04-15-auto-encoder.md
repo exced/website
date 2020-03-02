@@ -13,13 +13,10 @@ Auto Encoder is a simple method to generate data in an unsupervised world.
 
 The idea is to have 2 neural nets :
 
-- **encoder**: extract data information by destructing the image into a latent space
-- **decoder**: reconstruct data from information from a latent space
+- **encoder**: extract data information destroying the image into a latent space
+- **decoder**: reconstruct data from a latent space
 
 <!--truncate-->
-
-You can perform function minimization on the real data and the decode(encoded) data.
-Therefore you will generate an image that looks like a real one.
 
 The idea behind this:
 ![schema](/img/2017-04-15-autoencoder/schema.jpg)
@@ -28,9 +25,9 @@ It is actually the same reasoning as using compression algorithm with loss and c
 
 # Results
 
-Results on 10 test images.
+Results on 10 test images:
 
-The first row represents the real images and the second one represents the generated images.
+(The first row represents the real images and the second one represents the generated images)
 
 ### 2 layers
 
