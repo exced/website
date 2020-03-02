@@ -17,7 +17,7 @@ function Resume() {
                   Building a website to create and manipulate 3D objects using a
                   declarative data format.
                 </li>
-                <li>Analyzing 3D objects to infer structural information</li>
+                <li>Analyzing 3D objects to infer structural information.</li>
               </ul>
             </p>
 
