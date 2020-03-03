@@ -43,7 +43,7 @@ const pageSchema = new Schema({
 ### Define example
 
 ```javascript
-var pages = [
+const pages = [
   {
     _id: 'A',
     value: {
@@ -118,7 +118,7 @@ o.scope = {
 o.out = { replace: 'pages' };
 ```
 
-There are 3 non-obvious things here :
+There are 2 non-obvious things here :
 
 ```javascript
 emit(this.value.url, 0);
@@ -130,21 +130,9 @@ o.scope = {
 };
 ```
 
-```javascript
-o.out = { replace: 'pages' };
-```
-
-- first point is that Mongo has chosen to not reduce the unique key, that is why we reduce key that have no interest. It's just here to make the (key, value) be reduced.
-- crazy send of function code as string to mongo instance because it can't access the js code scope and I wanted to change Damping factor value only once.
-- Here is one hard point to debug. Mongo says, you need (key, value) and that is why we embedded our datas in a value field. Since the mapreduce changes the values of the database, we tells him to replace the "pages" and reiterate other the new ones.
+1. Mongo has chosen to not reduce the unique key, that is why we reduce key that have no interest. It's just here to make the (key, value) be reduced.
+2. To access js scope inside Mongo MapReduce, we need to send functions as string.
 
 ### Result
 
 ![Graph result](/img/2016-12-20-pagerank-mapreduce/PR-result1.png)
-
-### Conclusion
-
-Mapreduce with MongoDB is easy to use, there are just magic tips like sending the string code of a function
-to access the scope of the mongo instance.
-
-Choosing not reduce the unique key may also be weird but we can manage it by sending "fake" value.
