@@ -2,7 +2,7 @@
 id: pagerank-mapreduce
 title: Pagerank MapReduce
 author: Thomas Barras
-tags: [MapReduce]
+tags: [MapReduce, Mongo]
 ---
 
 ## Ranking websites with computing clusters
@@ -11,11 +11,11 @@ tags: [MapReduce]
 
 Pagerank is an algorithm used by Google to rank websites in their search engine.
 
-We can distribute the computation of this algorithm using map reduce in many clusters.
+We can distribute the computation of this algorithm using **map reduce** in many clusters.
 
 <!--truncate-->
 
-Here is the architecture of this project:
+### Overview
 
 Iterate until pagerank stabilization:
 
@@ -24,6 +24,8 @@ Iterate until pagerank stabilization:
 3. Reduce these pagerank
 
 ### Define graph model
+
+For the code we'll use Mongoose instead of the official Mongo driver:
 
 ```javascript
 const pageSchema = new Schema({
@@ -100,7 +102,7 @@ o.map = function() {
 o.reduce = function(k, vals) {
   const links = [];
   let pagerank = 0.0;
-  for (var i = 0, len = vals.length; i < len; i++) {
+  for (let i = 0, len = vals.length; i < len; i++) {
     if (vals[i] instanceof Array) {
       links = vals[i];
     } else {
