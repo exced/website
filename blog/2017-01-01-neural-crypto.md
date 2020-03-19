@@ -17,6 +17,8 @@ tags: [Crypto]
 
 Neural cryptography is a _key exchange protocol_ based on **Diffie-Hellman key exchange** to avoid Man in the middle attack. Both Alice and Bob build simplified neural networks called **Tree Parity Machine** and synchronize them. Eve also build a network, but slower than the originals.
 
+<!--truncate-->
+
 ## Diffie-Hellman key exchange
 
 <img src="/img/2017-01-01-neural-crypto/diffie-hellman.png" height="200" width="800" alt="Diffie Hellman protocol" />
