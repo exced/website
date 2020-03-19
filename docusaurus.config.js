@@ -1,3 +1,6 @@
+const remarkMath = require('remark-math');
+const rehypeKatex = require('rehype-katex');
+
 module.exports = {
   title: 'Thomas Barras',
   tagline: 'Software Engineer',
@@ -56,6 +59,10 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
+        blog: {
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },

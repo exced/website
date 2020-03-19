@@ -26,5 +26,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "rehype-katex": "^2.0.0",
+    "remark-math": "^2.0.0"
   }
 }
