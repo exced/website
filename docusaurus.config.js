@@ -54,6 +54,9 @@ module.exports = {
         },
       ],
     },
+    googleAnalytics: {
+      trackingID: 'UA-91860924-1',
+    },
   },
   presets: [
     [
