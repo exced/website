@@ -114,6 +114,17 @@ Eve cannot synchronize as fast as Alice and Bob and takes not recoverable delay.
 
 > Neural key exchange protocol is not based on any number theory. It is based on the difference between unidirectional and bidirectional synchronization of neural networks. Therefore, something like the neural key exchange protocol could give rise to potentially faster key exchange schemes.
 
+## Examples
+
+```bash
+echo "hello world" > hello.txt
+python run.py -i hello.txt -k 256 -K 20 -N 50 -L 6
+cat out.enc
+cat decipher.txt
+```
+
+<img src="/img/2017-01-01-neural-crypto/ex1.png" height="500" width="800" alt="Examples 1" />
+
 ## References
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Neural_cryptography). Accessed 2016-11-11
