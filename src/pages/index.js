@@ -123,13 +123,13 @@ function Scene() {
     }
   }, [scene, isDarkTheme]);
 
-  function mouseDown() {
+  function goWild() {
     if (glitchPass) {
       glitchPass.goWild = true;
     }
   }
 
-  function mouseUp() {
+  function goCalm() {
     if (glitchPass) {
       glitchPass.goWild = false;
     }
@@ -139,8 +139,10 @@ function Scene() {
     <div
       style={{ marginBottom: '-10px' }}
       ref={ref}
-      onMouseDown={mouseDown}
-      onMouseUp={mouseUp}
+      onTouchStart={goWild}
+      onTouchEnd={goCalm}
+      onMouseDown={goWild}
+      onMouseUp={goCalm}
     />
   );
 }
