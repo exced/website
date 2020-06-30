@@ -69,7 +69,7 @@ function Scene() {
         transparent: true,
       });
       setNameMaterial(_nameMaterial);
-      const nameGeometry = new THREE.PlaneGeometry(300, 120);
+      const nameGeometry = new THREE.PlaneGeometry(300, 140);
       const nameMesh = new THREE.Mesh(nameGeometry, _nameMaterial);
       nameMesh.position.set(0, 0, 0);
       scene.add(nameMesh);
