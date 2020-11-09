@@ -92,8 +92,8 @@ function Resume() {
             <p>
               <ul>
                 <li>
-                  C# compiler, C-family compiler, JS pretty printer, GraphQL to
-                  TS codegen, React Native (OSS)...
+                  C/C# compiler, JS pretty printer, GraphQL to TS codegen, React
+                  Native (OSS)...
                 </li>
               </ul>
             </p>
@@ -101,9 +101,7 @@ function Resume() {
             <h2>Languages & technologies</h2>
             <p>
               <ul>
-                <li>
-                  Typescript / Javascript, Go, Java, Reason / OCaml, Rust...
-                </li>
+                <li>Typescript / Javascript, Go, Java, Reason / OCaml...</li>
                 <li>
                   React, React Native, Svelte, Mobx, Redux, GraphQL, Node.js,
                   Three.js, AWS, GCP...

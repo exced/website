@@ -14,7 +14,7 @@ module.exports = {
       title: 'Exced',
       links: [
         { to: 'resume', label: 'Resume', position: 'left' },
-        { to: 'blog', label: 'Blog', position: 'left' },
+        // { to: 'blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/exced',
           label: 'GitHub',
@@ -42,10 +42,10 @@ module.exports = {
         {
           title: 'Social',
           items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
+            // {
+            //   label: 'Blog',
+            //   to: 'blog',
+            // },
             {
               label: 'Twitter',
               href: 'https://twitter.com/_exced',
