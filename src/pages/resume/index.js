@@ -41,7 +41,7 @@ function Resume() {
                 <li>Rewrote Mylo app as a cross-platform app.</li>
                 <li>
                   Built an internal admin portal to increase teams efficiency by
-                  easing and automating tasks.
+                  easing and automating tasks (+ API).
                 </li>
                 <li>
                   Maintained legacy Android Mylo app (rating from 3.0 to 4.4 on
@@ -55,11 +55,11 @@ function Resume() {
             <p>
               <ul>
                 <li>
-                  Built a website, a cross-platform mobile app to create and
-                  answer complex surveys.
+                  Built a website and a cross-platform mobile app to create and
+                  answer complex surveys (+ API).
                 </li>
                 <li>
-                  Built a cross-platform mobile app multiplayer quiz game.
+                  Built a cross-platform mobile app multiplayer quiz game (+ API).
                 </li>
                 <li>
                   Eased the transition from REST to GraphQL in PHP by creating a
@@ -72,7 +72,7 @@ function Resume() {
             <em>June 2016 - August 2016 | France</em>
             <p>
               <ul>
-                <li>Built a cross-platform mobile app to manage patients.</li>
+                <li>Built a cross-platform mobile app to manage patients (+ API).</li>
               </ul>
             </p>
 
