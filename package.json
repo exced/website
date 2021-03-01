@@ -14,7 +14,7 @@
     "classnames": "^2.2.6",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "three": "^0.118.3"
+    "three": "^0.125.0"
   },
   "browserslist": {
     "production": [
